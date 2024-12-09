@@ -1,0 +1,222 @@
+/* Global styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    line-height: 1.6;
+    background: url('https://i.postimg.cc/GhzKFGTp/Picsart-24-12-09-14-39-37-488.jpg') no-repeat center center fixed; 
+    background-size: cover; /* جعل الخلفية تغطي الشاشة بالكامل */
+    overflow-x: hidden;
+}
+
+/* Reset margins and padding */
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #2b2626;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Navigation */
+nav {
+    background-color: rgba(241, 244, 247, 0);
+    position: fixed; /* لجعل الأزرار ثابتة في الأعلى */
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Button styles */
+nav button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #fafafa00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+    background-color: #1f1e1d;
+}
+
+/* Logo Image */
+header {
+    position: fixed;
+    top: 10px; /* المسافة بين الشعار والأعلى */
+    left: 20px;
+    z-index: 1001;
+}
+
+header img {
+    width: 80px; /* حجم الشعار يمكن تعديله */
+    height: auto;
+}
+
+/* Hero Section */
+.hero {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #09252e;
+    text-shadow: 2px 2px 10px rgba(0, 4, 7, 0.24);
+}
+
+.hero h1 {
+    font-size: 4.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* About Section */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about {
+    background: rgba(46, 158, 192, 0.151);
+    color: #b12b2b09;
+}
+
+.about-text {
+    font-size: 1.4rem;
+    line-height: 1.8;
+    color: #828686e7;
+    background-color: #50c1ee00;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-shadow: #2fc3f5;
+}
+
+.about h2, .activities h2, .contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+/* Activities Section */
+.activities {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.activities ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+.activities li {
+    font-size: 1.5rem;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.activities li:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section */
+.contact {
+    background: rgba(44, 62, 80, 0.9);
+    color: #fff;
+}
+
+.contact p {
+    font-size: 1.3rem;
+    margin: 10px 0;
+}
+
+.contact p a {
+    color: #f39c12;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+    color: #bbb;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .activities ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.4rem;
+    }
+
+    .about-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    nav button {
+        font-size: 1rem;
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+}

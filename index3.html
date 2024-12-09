@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نادي الفنون والعلوم</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <nav>
+        <button onclick="scrollToSection('about')">About Us</button>
+        <button onclick="scrollToSection('activities')">Activities</button>
+        <button onclick="scrollToSection('contact')">Contact</button>
+    </nav>
+
+    <div class="hero">
+        <h1>نادي الفنون والعلوم يرحب بكم</h1>
+        <p>مكان للإبداع، التعاون، وتطوير المهارات</p>
+    </div>
+
+    <section id="about" class="about">
+        <h2>حول النادي</h2>
+        <p class="about-text">
+            يسعى نادي جامعتنا إلى تمكين الطلاب وإلهامهم من خلال تقديم أنشطة مبتكرة، فعاليات مميزة، وورش عمل غنية بالفائدة
+            نهدف إلى بناء مجتمع طلابي متعاون، مبدع، وقيادي يُحدث فرقًا إيجابيًا في الجامعة وخارجها
+        </p>
+    </section>
+
+    <section id="activities" class="activities">
+        <h2>الأنشطة</h2>
+        <ul>
+            <li>🎨 ورش العمل الفنية</li>
+            <li>🌍 خدمة المجتمع</li>
+            <li>📚 مجموعات الدراسة</li>
+            <li>🏆 أنشطة ترفيهية</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>للتواصل</h2>
+        <p>Email: <a href="mailto:wajemaoui2002@gmail.com">wajemaoui2002@gmail.com</a></p>
+        <p>Phone: +212639593193</p>
+        <p>Follow us on
+            <a href="https://www.facebook.com/profile.php?id=61569372930204" target="_blank">Facebook</a> 
+            and 
+            <a href="https://www.instagram.com/club.arts.sciences/profilecard/?igsh=MWVtbHZ0ODRwMDZoaw==" target="_blank">Instagram</a>!
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Club of Arts and Sciences. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for scrolling -->
+    <script>
+        // Function to scroll to a specific section
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            window.scrollTo({
+                top: section.offsetTop - 50, // Offset to account for the fixed navbar
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+</html>
